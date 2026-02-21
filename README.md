@@ -1,9 +1,7 @@
 It explains:
 
 1️⃣ Speech → Text
-
 2️⃣ Text → Speech
-
 3️⃣ Speech → Speech
 
 All clearly separated so anyone can understand.
