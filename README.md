@@ -15,6 +15,7 @@ This repository contains three modules:
 
 🎤 Speech → Speech
 
+
 📌 Project Overview
 
 This project demonstrates how voice systems work without using any API.
@@ -58,6 +59,7 @@ speech_to_text/
 │── app.py
 │── requirements.txt
 │── vosk-model/
+
 2️⃣ Text to Speech (TTS)
 ✅ What It Does
 
@@ -92,6 +94,7 @@ text_to_speech/
 │── app.py
 │── tts_engine.py
 │── requirements.txt
+
 3️⃣ Speech to Speech (S2S)
 ✅ What It Does
 
@@ -130,6 +133,7 @@ speech_to_speech/
 │── tts_engine.py
 │── vosk-model/
 │── requirements.txt
+
 🚀 Installation Guide
 1️⃣ Clone Repository
 git clone https://github.com/YOUR_USERNAME/NLP.git
