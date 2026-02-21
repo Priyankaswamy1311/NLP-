@@ -2,27 +2,29 @@
 
 A complete offline Voice AI system built using Python.
 
----
-
-## 📌 Project Overview
-
 This repository contains three modules:
 
 - 🗣 Speech → Text  
 - 🔊 Text → Speech  
 - 🎤 Speech → Speech  
 
-All systems run completely offline without any API.
+---
+
+## 📌 Project Overview
+
+This project demonstrates how voice systems work without using any API.
+
+All systems run locally and do not require internet.
 
 ---
 
 # 1️⃣ Speech to Text (STT)
 
-## 🔹 What It Does
+## ✅ What It Does
 
 Converts spoken voice into text.
 
-**Example:**
+### Example:
 
 You say:
 
@@ -33,25 +35,40 @@ What is Apple?
 System displays:
 
 ```bash
-Apple is a fruit.
+Apple is a fruit...
 ```
 
 ## ⚙️ How It Works
 
-1. Microphone captures audio  
-2. Vosk processes speech  
-3. Speech converts into text  
-4. Text appears on screen  
+- Microphone captures audio  
+- Audio processed using Vosk  
+- Speech converted into text  
+- Text displayed on dashboard  
+
+## 🛠 Tech Stack
+
+- Python  
+- Vosk (Offline Speech Recognition)  
+- Gradio  
+
+## 📂 Folder Structure
+
+```
+speech_to_text/
+│── app.py
+│── requirements.txt
+│── vosk-model/
+```
 
 ---
 
 # 2️⃣ Text to Speech (TTS)
 
-## 🔹 What It Does
+## ✅ What It Does
 
-Converts text into spoken voice.
+Converts written text into spoken voice.
 
-**Example:**
+### Example:
 
 You type:
 
@@ -63,19 +80,34 @@ System speaks the answer.
 
 ## ⚙️ How It Works
 
-1. User enters text  
-2. pyttsx3 generates voice  
-3. Speaker outputs sound  
+- User enters text  
+- Text processed  
+- Voice generated using pyttsx3  
+
+## 🛠 Tech Stack
+
+- Python  
+- pyttsx3  
+- Gradio  
+
+## 📂 Folder Structure
+
+```
+text_to_speech/
+│── app.py
+│── tts_engine.py
+│── requirements.txt
+```
 
 ---
 
 # 3️⃣ Speech to Speech (S2S)
 
-## 🔹 What It Does
+## ✅ What It Does
 
-You speak → System understands → System replies in voice.
+You speak → System understands → AI generates answer → System responds in voice.
 
-⚠ No text visible.
+⚠ No text is visible on the screen.
 
 ---
 
@@ -83,47 +115,94 @@ You speak → System understands → System replies in voice.
 
 ```
 Speech Input
-     ↓
-Speech Recognition
-     ↓
-AI Processing
-     ↓
+      ↓
+Speech Recognition (Vosk)
+      ↓
+AI Model Processing
+      ↓
+Text Response
+      ↓
 Text-to-Speech
-     ↓
+      ↓
 Voice Output
 ```
 
----
+## 🛠 Tech Stack
 
-# 📂 Folder Structure
+- Python  
+- Vosk  
+- Local AI Model  
+- pyttsx3  
+- Gradio  
+
+## 📂 Folder Structure
 
 ```
-NLP/
-│── speech_to_text/
-│── text_to_speech/
-│── speech_to_speech/
-│── README.md
+speech_to_speech/
+│── app.py
+│── model.py
+│── tts_engine.py
+│── vosk-model/
+│── requirements.txt
 ```
 
 ---
 
-# 🚀 How To Run
+# 🚀 Installation Guide
+
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/NLP.git
 cd NLP
+```
+
+## 2️⃣ Install Requirements
+
+```bash
 pip install -r requirements.txt
+```
+
+## 3️⃣ Run Any Module
+
+Example:
+
+```bash
+cd speech_to_text
 python3 app.py
 ```
 
 ---
 
+# 🔥 Features
+
+- ✅ 100% Offline  
+- ✅ No API Required  
+- ✅ Real-Time Processing  
+- ✅ Beginner Friendly  
+- ✅ Modular Structure  
+
+---
+
+# 🧠 Simple Concept
+
+Speech to Speech =
+
+Hear → Understand → Think → Speak  
+
+It combines:
+
+- Speech to Text  
+- AI Processing  
+- Text to Speech  
+
+---
+
 # 💻 Requirements
 
-- Python 3.8+
-- Microphone
-- Speaker
-- Linux / Windows / Mac
+- Python 3.8+  
+- Microphone  
+- Linux / Windows / Mac  
 
 ---
 
